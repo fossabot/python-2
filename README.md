@@ -6,6 +6,7 @@
 [![pypi supported versions](https://img.shields.io/pypi/pyversions/kubernetes.svg)](https://pypi.python.org/pypi/kubernetes)
 [![Client Capabilities](https://img.shields.io/badge/Kubernetes%20client-Silver-blue.svg?style=flat&colorB=C0C0C0&colorA=306CE8)](http://bit.ly/kubernetes-client-capabilities-badge)
 [![Client Support Level](https://img.shields.io/badge/kubernetes%20client-beta-green.svg?style=flat&colorA=306CE8)](http://bit.ly/kubernetes-client-support-badge)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FMiaoRachelYu%2Fpython.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FMiaoRachelYu%2Fpython?ref=badge_shield)
 
 Python client for the [kubernetes](http://kubernetes.io/) API.
 
@@ -183,3 +184,7 @@ Specifically check `ipaddress` and `urllib3` package versions to make sure they 
 Starting from 4.0 release, we do not support directly calling exec or attach calls. you should use stream module to call them. so instead
 of `resp = api.connect_get_namespaced_pod_exec(name, ...` you should call `resp = stream(api.connect_get_namespaced_pod_exec, name, ...`.
 See more at [exec example](examples/exec.py).
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FMiaoRachelYu%2Fpython.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FMiaoRachelYu%2Fpython?ref=badge_large)
